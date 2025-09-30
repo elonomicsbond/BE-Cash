@@ -134,11 +134,11 @@ The ceremony ensures that as long as one participant deletes their secrets, the 
    ```
 2. Build a verifiable anchor program based on github commit
    ```bash
-   git checkout 0bae41526f325360ea962f9aa92bf6298e4d2de5
+   git checkout 549686066e81c5434182f9f85b9296bb636b07e9
    cd anchor
    solana-verify build --base-image solanafoundation/anchor:v0.31.0
    solana-verify get-executable-hash target/deploy/zkcash.so
    >> c6f1e5336f2068dc1c1e1c64e92e3d8495b8df79f78011e2620af60aa43090c5  target/verifiable/zkcash.so
    ```
 
-3. You'll find the hash of onchain program exactly matches the zkcash program generated from commit 0bae41526f325360ea962f9aa92bf6298e4d2de5, which is the commit audited.
+3. You'll find the hash of onchain program exactly matches the zkcash program generated from commit 549686066e81c5434182f9f85b9296bb636b07e9, which is the commit audited.
